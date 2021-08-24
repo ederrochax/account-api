@@ -1,4 +1,4 @@
-# Lumen PHP Framework
+# API with Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
@@ -7,17 +7,31 @@
 
 Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Official Documentation
+## Getting Started
+First, clone the repo:
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+#### Install dependencies
+```
+$ composer install
+```
 
-## Contributing
+#### Configure the Environment
+Create `.env` file:
+```
+$ cat .env.example > .env
+```
+#### Migrations
+Run the Artisan migrate command:
+```bash
+$ php artisan migrate
+```
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Validation
 
-## Security Vulnerabilities
+Validated using [automated test suite](http://ipkiss.pragmazero.com/).
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+![image](https://user-images.githubusercontent.com/30854048/130557382-17451b95-bb22-48ea-8332-8fbf9a2419a2.png)
+
 
 ## License
 
